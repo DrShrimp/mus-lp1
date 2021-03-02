@@ -36,6 +36,7 @@ footer {
     width: 100%;
     
     
+    
 }
 
 img {
@@ -43,9 +44,9 @@ img {
     grid-column: 2/3;
     width: 100%;
     min-width: 200px;
-    max-width: 400px;
+    max-width: 300px;
     display: block;
-    margin: 1rem auto;
+    margin: auto;
     z-index: 5;
     border: 10px solid  hsla(0, 0%, 90%, 0.8);
        
@@ -181,7 +182,7 @@ img {
     
     img {
         min-width: 100px;
-        max-width: 400px;
+        
         display: block;
         margin: auto;
         grid-row: 1/2;
