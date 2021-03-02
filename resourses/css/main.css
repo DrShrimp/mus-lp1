@@ -146,7 +146,7 @@ footer {
         display: grid;
         column-gap: 5px;
         grid-template-rows: 1fr 1fr 1rem;
-        grid-template-columns: 30%fr 30%fr 30%fr;
+        grid-template-columns: 30% 30% 30%;
         width: 95%;
         margin: auto;
     }
