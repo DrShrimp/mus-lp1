@@ -39,7 +39,7 @@ footer {
     grid-column: 2/3;
     z-index: 5;
     background-color: hsla(0, 0%, 90%, 0.8);
-    height: 320px;
+    height: auto;
     
 }
 .artwork img {
@@ -137,3 +137,24 @@ footer {
 #spotify {
     margin-bottom: 1.5rem;
 }
+
+
+
+
+@media only screen and (max-width: 768px){
+    .container {
+        display: grid;
+        column-gap: 5px;
+        grid-template-rows: 1fr 1fr 1rem;
+        grid-template-columns: 30%fr 30%fr 30%fr;
+        width: 95%;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+}
+
+@media only screen and (max-width: 280px) {}
