@@ -212,7 +212,7 @@ img {
     .info-mobile div {
         display: flex;
         justify-content: center;
-        gap: 2rem;
+        gap: 20px;
     }
     .info-mobile a {
         color:hsla(0, 0%, 21%, 1);
