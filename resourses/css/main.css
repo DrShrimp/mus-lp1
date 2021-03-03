@@ -19,7 +19,7 @@ p {
 }
 footer {
     grid-row: 3/4;
-    grid-column: 2/3;
+    grid-column: 1/4;
     text-align: center;
 }
 /**************************************************************************
@@ -33,10 +33,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     filter:blur(5px);
-    width: 100%;
-    
-    
-    
+    width: 100%;   
 }
 
 img {
@@ -61,8 +58,12 @@ img {
     margin: 2rem auto;
     
 }
+.info-mobile {
+    display: none;
+}
 .info ul {
     list-style-type: none;
+    margin-top: 2.5rem;
     
 }
 .info a {
@@ -82,7 +83,7 @@ img {
     background-color:hsla(0, 0%, 21%, 1);
 }
 
-.info h1, .info h4, .info h5 {
+.info h2, .info h4, .info h5 {
     text-align: right;
     line-height: 1rem;
     
@@ -106,7 +107,7 @@ img {
 .player {
     grid-row: 2/3;
     grid-column: 2/3;
-    margin: 2rem auto;
+    margin: 3rem auto;
 }
 .player audio {
     width: 100%;
@@ -114,11 +115,18 @@ img {
     
     height: 1.5rem;
 }
-.player h3, .player h5 { 
+.player h1, .player h5 { 
     line-height: 0.5rem;
+}
+.player h1 {
+    font-size: 1.2rem;
 }
 .player p {
     margin-top: 2rem;
+}
+#spotify-mob {
+    display: none;
+    align-self: center;
 }
 
 /**************************************************************************
@@ -155,7 +163,7 @@ img {
     
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
     .container {
         display: grid;
         column-gap: 5px;
@@ -190,15 +198,42 @@ img {
         z-index: 5;  
     }
     .info {
+        display: none;
+    }
+    .info-mobile {
         grid-row: 3/4;
         grid-column: 1/5;
-        margin: 2rem auto;
+        display: block;
+        
     }
+    .info-mobile h2 {
+        text-align: center;
+    }
+    .info-mobile div {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .info-mobile a {
+        color:hsla(0, 0%, 21%, 1);
+        font-size: 2rem;
+        text-decoration: none;
+        
+    }
+   
     .player {
         grid-row: 2/3;
         grid-column: 1/5;
-        margin: 2rem auto;
+        margin: 2rem auto 0 auto;
         padding: 0 1rem;
+    }
+    #spotify-mob {
+        display:block;
+        margin: 1rem auto;
+        width: 200px;
+    }
+    .player p {
+        margin-top: 1rem;
     }
     .share-buttons {
         display: none;
